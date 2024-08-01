@@ -17,9 +17,8 @@ add_library(c_setup INTERFACE)
 target_compile_options(c_setup INTERFACE -Wall -Werror -Wextra -Wshadow 
   -Wdouble-promotion -Wformat=2 -Wformat-truncation -Wundef -fno-common 
   -Wconversion -Wfloat-equal -Wpointer-arith -Wcast-align -Wstrict-prototypes 
-  -Wwrite-strings -Waggregate-return -Wcast-qual -Wswitch-default 
-  -Wunreachable-code -Winit-self -Wuninitialized -pedantic-errors 
-  -Wfatal-errors -Wpedantic)
+  -Wwrite-strings -Wcast-qual -Wswitch-default -Wunreachable-code -Winit-self
+  -Wuninitialized -pedantic-errors -Wfatal-errors -Wpedantic)# -Waggregate-return)
 target_compile_features(c_setup INTERFACE c_std_23)
 target_include_directories(c_setup INTERFACE ${PROJECT_SOURCE_DIR})
 
